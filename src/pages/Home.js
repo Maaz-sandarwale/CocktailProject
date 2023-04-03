@@ -10,10 +10,10 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 const Home = () => {
   const [data, setData] = useState([])
   const [filteredData, setFilteredData] = useState([])
-  const [searchvalue, setSearchValue] = useState('A')
+  const [searchvalue, setSearchValue] = useState('')
+
   const passvalue = (passvalue) => {
-    console.log("pass value 12", searchvalue)
-    // setSearchValue(passvalue)
+    setSearchValue(passvalue)
   }
 
   const getData = async () => {
@@ -24,14 +24,18 @@ const Home = () => {
 
 
   useEffect(() => {
-    passvalue()
-    if (!searchvalue) return
-    const searchdata = data.filter((item) => {
-      return item.strDrink==searchvalue
-      //  return item.strDrink.toLowerCase().includes(searchvalue.toLowerCase())
-    })
-    setFilteredData(searchdata)
-  }, [searchvalue])
+    if (searchvalue == '') {
+      setFilteredData(data)
+    } else {
+      setTimeout(() => {
+        const searchdata = data.filter((item) => {
+          return item.strDrink.toLowerCase().includes(searchvalue.toLowerCase());
+        });
+        setFilteredData(searchdata);
+      }, 400);
+    }
+
+  }, [searchvalue]);
 
 
   useEffect(() => {
