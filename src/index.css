@@ -449,3 +449,78 @@ Cocktail
   height: 33%;
   font-size: 1.3rem;
 }
+
+.cocktailhead{
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.carts{
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.cards {
+  background: var(--mainBackground);
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 0.4fr));
+  row-gap: 3rem;
+  column-gap: 3rem;
+  border-radius: var(--mainBorderRadius);
+  margin: 0 10% 0 10%;
+  
+}
+
+.card{
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.image{
+  border-radius: 10px 10px 0px 0px; 
+}
+.details{
+  border-style: none;
+  background-color: #476a2e;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem;
+  letter-spacing: var(--mainSpacing);
+  border-radius:0.3rem ;
+}
+
+.backhome{
+  display: flex;
+ justify-content: center;
+ color: white;
+ background-color: #476a2e;
+ cursor: pointer;
+ padding: 0.4rem;
+ letter-spacing: var(--mainSpacing);
+ border-radius:0.3rem ;
+ margin: 3% 45% 0 45%;
+}
+
+.cardcontent{
+  padding: 1.6rem;
+}
+
+.cardcontent>h4{
+  font-size: 2rem;
+  font-weight: bolder;
+  font-weight: 200px;
+}
+.singlecocktail{
+  margin-top: 4rem;
+}
+.imagesingle{
+  height: 30%;
+  width: 20%;
+  margin-left: 10rem;
+  float: left;
+  padding-right: 2rem;
+}

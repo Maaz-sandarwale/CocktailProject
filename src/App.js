@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
-              
         <Route path='/About' element={<About />} />
+        <Route path='/cocktail/:id' element={<SingleCocktail />} />
       </Routes>
 
     </Router>
