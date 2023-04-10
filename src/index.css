@@ -422,6 +422,31 @@ Cocktail
   box-shadow: 0 5px 3px -1px gray;
 }
 
+@media screen  and (max-width:670px){
+ .MyNavBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+ 
+}
+ } 
+
+
+ @media screen  and (max-width:400px){
+  .MyNavBar{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   min-width: 500px;
+ }
+ 
+}
+
 .about{
   margin-left: 2rem;
 }
@@ -435,6 +460,21 @@ Cocktail
   margin: 6rem 25% 0 25%;
   border-radius: 5px;
 }
+
+@media screen and (max-width:445px) {
+  .SearchBox{
+    background-color: white;
+    border-bottom: 1.5px solid rgb(58, 48, 48);
+    box-shadow: 3px 5px 3px -1px  gray;
+    display: flex;
+    height: 150px;
+    margin: 6rem 25% 0 25%;
+    border-radius: 5px;
+    min-height: 250px;
+    min-width: 250px;
+  }
+}
+
 .SearchBoxContent{
   display: block;
   margin: 2rem 2rem 0 2rem;
